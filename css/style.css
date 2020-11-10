@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+/* overwrite bootstrap inputs style  */
+
+
+/* our classes */
+
+.main-bg {
+    background: linear-gradient( #FFFAEC, #FEE085);
+}
+
+.main-color {
+    color: #F9D036;
+}
+
+.active-bg {
+    background-color: #012344;
+}
+
+.alt-color {
+    color: #012344 !important;
+}
+
+.main-hover:hover {
+    color: #F9D036 !important;
+}
+
+.light-blue {
+    color: #51CEC2;
+}
+
+.radius {
+    border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    -moz-border-radius: 7px !important;
+    -ms-border-radius: 7px !important;
+    -o-border-radius: 7px !important;
+}
+
+.rounded-lg {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* login page  */
+
+.main-content {
+    padding: 5rem 0;
+    min-height: 100vh;
+}
+
+.form-holder {
+    padding: 2rem 5rem;
+}
+
+.form-holder form input {
+    width: 320px;
+}
+
+.form-holder form label {
+    font-size: .8rem;
+}
+
+.form-holder form .forget-password a {
+    color: #51CEC2;
+    font-size: .8rem;
+}
+
+@media (max-width:570px) {
+    .form-holder form input {
+        width: 200px;
+    }
+}
+
+
+/* main dashboard  */
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.dashboard-body {
+    background-color: #FFFBE6;
+}
+
+
+/* sidebar  */
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-right: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    border-bottom: 2px solid #fff;
+}
+
+#sidebar-wrapper .sidebar-heading .profile_pic {
+    width: 25px;
+    height: 25px;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+.list-group-item {
+    padding: .4rem 1.25rem;
+    background-color: transparent;
+}
+
+#sidebar-wrapper .list-group a.active {
+    background-color: #012344;
+    color: #F9D036;
+}
+
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+    background-color: #012344;
+    color: #F9D036;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-right: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-right: -15rem;
+    }
+}
+
+.collapse ul li a {
+    color: #fff;
+}
+
+
+/* navbar  */
+
+nav .search-holder {
+    width: 200px;
+}
+
+nav .search-holder input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+nav .search-holder input:focus {
+    border: 0 !important;
+    outline: none !important;
+}
+
+nav .search-holder input::placeholder {
+    color: #bfbdbd !important;
+}
+
+nav .search-holder span.input-group-text {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    color: #bfbdbd;
+}
+
+
+/* info cards  */
+
+.info-card {
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+.info-card .info span {
+    font-size: 10px;
+    color: #C1C1C1;
+}
+
+
+/* orders  */
+
+.orders-container,
+.orders-container .card {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 0;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .15)!important;
+}
+
+.orders-container .title a {
+    color: #51CEC2;
+}
+
+.fa-map-marker-alt {
+    color: #51CEC2;
+}
+
+.username {
+    color: #012344 !important;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.orders-container .card .username {
+    color: #012344 !important;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.description {
+    font-size: 12px;
+    color: #C1C1C1;
+}
+
+.description {
+    font-size: 12px;
+    color: #C1C1C1;
+}
+
+.orders-container .card button {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cards-title {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+a.show-all {
+    color: #51CEC2;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* charts  */
+
+.chart,
+.chart2,
+.chart3 {
+    position: relative;
+    display: inline-block;
+    /* margin: 20px 10px; */
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+
+.chart div.position-absolute,
+.chart2 div.position-absolute,
+.chart3 div.position-absolute {
+    top: 30%;
+    right: 25%;
+}
+
+
+/* user pages  */
+
+h5.title-with-border {
+    font-weight: 600;
+    color: #012344;
+}
+
+h5.title-with-border::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #51CEC2;
+    display: block;
+    margin: 5px;
+}
+
+h5.title-with-border span {
+    width: 30px;
+    padding-bottom: 5px;
+    height: 3px;
+    border-bottom: 3px solid #51CEC2;
+    margin: 5px;
+}
+
+
+/* .tbody-holder {
+    background-color: #FBFBFB;
+} */

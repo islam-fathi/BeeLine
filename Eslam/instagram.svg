@@ -1,0 +1,17 @@
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.5" viewBox="0 0 18.5 18.5">
+  <g id="Group_189" data-name="Group 189">
+    <g id="Group_188" data-name="Group 188">
+      <path id="Path_209" data-name="Path 209" d="M12.719,0H5.781A5.782,5.782,0,0,0,0,5.781v6.938A5.782,5.782,0,0,0,5.781,18.5h6.938A5.782,5.782,0,0,0,18.5,12.719V5.781A5.782,5.782,0,0,0,12.719,0Zm4.047,12.719a4.051,4.051,0,0,1-4.047,4.047H5.781a4.051,4.051,0,0,1-4.047-4.047V5.781A4.051,4.051,0,0,1,5.781,1.734h6.938a4.051,4.051,0,0,1,4.047,4.047Z" fill="#012344"/>
+    </g>
+  </g>
+  <g id="Group_191" data-name="Group 191" transform="translate(4.625 4.625)">
+    <g id="Group_190" data-name="Group 190">
+      <path id="Path_210" data-name="Path 210" d="M132.625,128a4.625,4.625,0,1,0,4.625,4.625A4.625,4.625,0,0,0,132.625,128Zm0,7.516a2.891,2.891,0,1,1,2.891-2.891A2.895,2.895,0,0,1,132.625,135.516Z" transform="translate(-128 -128)" fill="#012344"/>
+    </g>
+  </g>
+  <g id="Group_193" data-name="Group 193" transform="translate(13.606 3.662)">
+    <g id="Group_192" data-name="Group 192">
+      <ellipse id="Ellipse_49" data-name="Ellipse 49" cx="0.616" cy="0.616" rx="0.616" ry="0.616" fill="#012344"/>
+    </g>
+  </g>
+</svg>
