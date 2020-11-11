@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/tox-progress.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -117,7 +118,7 @@
 
                     <div class="input-group search-holder mt-3 mt-md-0">
                         <div class="input-group-prepend ">
-                            <span class="input-group-text bg-light border-0" id="basic-addon1"><i class="fas fa-search"></i></span>
+                            <button type="submit" class="input-group-text bg-light border-0" id="basic-addon1"><i class="fas fa-search"></i></button>
                         </div>
                         <input type="text" class="form-control bg-light border-0" placeholder="بحث">
                     </div>
@@ -138,18 +139,18 @@
                     <div class="form-holder radius bg-white p-4 my-5">
                         <form action="">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
                                         <label>اسم العميل</label>
                                         <input type="email" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6 col-lg-4">
                                     <label>رقم الجوال</label>
                                     <div class="row ">
                                         <div class="col-3 ">
                                             <div class="form-group">
-                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                <select class="form-control p-0" id="exampleFormControlSelect1">
                                                 <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                                 <option data-countryCode="AD" value="376">Andorra (+376)</option>
                                                 <option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -158,30 +159,30 @@
                                         </div>
                                         <div class="col-9">
                                             <div class="form-group ">
-                                                <input type="number" class="form-control mw-100">
+                                                <input type="tel" class="form-control mw-100">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6 col-lg-4">
                                     <label>البريد الالكتروني </label>
                                     <input type="email" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
                                         <label>كلمة المرور</label>
                                         <input type="password" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
                                         <label>تأكيد كلمة المرور</label>
                                         <input type="password" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4  justify-content-center align-items-center d-flex">
+                                <div class="col-md-6 col-lg-4  justify-content-center align-items-center d-flex">
                                     <div class="row justify-content-between w-100">
                                         <div class="col-6 d-flex align-items-center justify-content-end flex-row-reverse">
                                             <label class="light-blue mb-0" for="project_owner">هل انت صاحب مشروع</label>
@@ -200,131 +201,7 @@
                             <span><i class="fas fa-users mx-2 "></i></span>العملاء
                         </h5>
                         <div class="table-responsive my-3">
-                            <table class="table table-borderless text-center">
-                                <thead class="bg-warning border-0">
-                                    <tr>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">اسم العميل</th>
-                                        <th scope="col">رقم الجوال</th>
-                                        <th scope="col">البريد الالكتروني</th>
-                                        <th scope="col">صاحب مشروع </th>
-                                        <th scope="col"> </th>
-                                    </tr>
-                                </thead>
-                                <div class="tbody-holder p-3 pt-0">
-                                    <tbody>
-                                        <tr class="spacer py-2 d-block"></tr>
-                                        <tr class="bg-white shadow">
-                                            <th scope="row">1234</th>
-                                            <td class="d-flex align-items-center justify-content-start">
-                                                <img src="images/user.jpg" width="30px" class="profile_pic rounded-circle mx-1" style="border: 2px solid #fff;" alt="">
-                                                <h6 class="mx-1 mb-0 text-dark">أسامة عسكر</h6>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <img src="icons/kwait.svg" width="30px" class="profile_pic mx-1" alt="">
-                                                    <h6 class="mx-1 mb-0 text-dark" dir="ltr">+201234567890</h6>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <h6 class="mx-1 mb-0 text-dark" dir="ltr">info@website.com</h6>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <i class="fas fa-check text-success"></i>
-                                            </td>
-                                            <td>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #6788FF;">
-                                                <i class="fas fa-pen"></i>
-                                                    تعديل       
-                                                </button>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #FF9391;">
-                                                    <i class="fas fa-trash"></i>
-                                                        حذف       
-                                                    </button>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #FC7438;">
-                                                        <i class="fas fa-lock"></i>
-                                                            حظر       
-                                                        </button>
-                                            </td>
-                                        </tr>
-                                        <tr class="spacer py-2 d-block"></tr>
-                                        <tr class="bg-white shadow">
-                                            <th scope="row">1234</th>
-                                            <td class="d-flex align-items-center justify-content-start">
-                                                <img src="images/user.jpg" width="30px" class="profile_pic rounded-circle mx-1" style="border: 2px solid #fff;" alt="">
-                                                <h6 class="mx-1 mb-0 text-dark">أسامة عسكر</h6>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <img src="icons/kwait.svg" width="30px" class="profile_pic mx-1" alt="">
-                                                    <h6 class="mx-1 mb-0 text-dark" dir="ltr">+201234567890</h6>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <h6 class="mx-1 mb-0 text-dark" dir="ltr">info@website.com</h6>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <i class="fas fa-check text-success"></i>
-                                            </td>
-                                            <td>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #6788FF;">
-                                                <i class="fas fa-pen"></i>
-                                                    تعديل       
-                                                </button>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #FF9391;">
-                                                    <i class="fas fa-trash"></i>
-                                                        حذف       
-                                                    </button>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #FC7438;">
-                                                        <i class="fas fa-lock"></i>
-                                                            حظر       
-                                                        </button>
-                                            </td>
-                                        </tr>
-                                        <tr class="spacer py-2 d-block"></tr>
-                                        <tr class="bg-white shadow">
-                                            <th scope="row">1234</th>
-                                            <td class="d-flex align-items-center justify-content-start">
-                                                <img src="images/user.jpg" width="30px" class="profile_pic rounded-circle mx-1" style="border: 2px solid #fff;" alt="">
-                                                <h6 class="mx-1 mb-0 text-dark">أسامة عسكر</h6>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <img src="icons/kwait.svg" width="30px" class="profile_pic mx-1" alt="">
-                                                    <h6 class="mx-1 mb-0 text-dark" dir="ltr">+201234567890</h6>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center justify-content-start">
-                                                    <h6 class="mx-1 mb-0 text-dark" dir="ltr">info@website.com</h6>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <i class="fas fa-times text-danger"></i>
-                                            </td>
-                                            <td>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #6788FF;">
-                                                <i class="fas fa-pen"></i>
-                                                    تعديل       
-                                                </button>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #FF9391;">
-                                                    <i class="fas fa-trash"></i>
-                                                        حذف       
-                                                    </button>
-                                                <button class="small text-white btn-sm btn-primary border-0" style="background-color: #FC7438;">
-                                                        <i class="fas fa-lock"></i>
-                                                        حظر       
-                                                </button>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </div>
-                            </table>
+                            <table id="example" class="display text-center table-borderless" width="100%"></table>
                         </div>
                     </div>
                 </div>
@@ -332,11 +209,13 @@
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js "></script>
-    <script src="js/jquery.easypiechart.min.js "></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Arabic.json"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/main.js "></script>
 
 </body>
