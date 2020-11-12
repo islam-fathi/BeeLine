@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -134,74 +133,126 @@
             <div class="container py-4">
                 <div class="add-customer">
                     <h5 class="title-with-border">
-                        <span><i class="fas fa-plus-circle mx-2 "></i></span>إضافة عميل جديد
+                        <span><i class="fas fa-plus-circle mx-2 text-hide"></i></span>الطلبات الواردة
                     </h5>
-                    <div class="form-holder radius bg-white p-4 my-5">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
+                    <div class="cards-holder px-5 py-4 radius bg-white shadow my-5">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <!-- card1 -->
+                                <div class="card shadow py-3 px-2 radius border-0">
+                                    <div class="img text-center ">
+                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
+                                    </div>
+                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
+                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
+                                    <p class="pb-2 description ">
+                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
+                                    </p>
                                     <div class="form-group">
-                                        <label>اسم العميل</label>
-                                        <input type="email" class="form-control">
+                                        <select name="" class="form-control base-border font-weight-bold small" id="">
+                                            <option value="">اختر المندوب</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <label>رقم الجوال</label>
-                                    <div class="row ">
-                                        <div class="col-3 ">
-                                            <div class="form-group">
-                                                <select class="form-control p-0" id="exampleFormControlSelect1">
-                                                <option data-countryCode="DZ" value="213">Algeria (+213)</option>
-                                                <option data-countryCode="AD" value="376">Andorra (+376)</option>
-                                                <option data-countryCode="AO" value="244">Angola (+244)</option>
-                                            </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-9">
-                                            <div class="form-group ">
-                                                <input type="tel" class="form-control mw-100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <label>البريد الالكتروني </label>
-                                    <input type="email" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <label>كلمة المرور</label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <label>تأكيد كلمة المرور</label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4  justify-content-center align-items-center d-flex">
-                                    <div class="row justify-content-between w-100">
-                                        <div class="col-6 d-flex align-items-center justify-content-end flex-row-reverse">
-                                            <label class="light-blue mb-0" for="project_owner">هل انت صاحب مشروع</label>
-                                            <input type="checkbox" class="w-auto mr-1" id="project_owner">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
                                         </div>
                                         <div class="col-6">
-                                            <button type="submit " class="btn btn-warning text-dark w-100 py-1 d-block m-auto ">إضافة</button>
+                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-3">
+                                <!-- card2 -->
+                                <div class="card shadow py-3 px-2 radius border-0">
+                                    <div class="img text-center ">
+                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
+                                    </div>
+                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
+                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
+                                    <p class="pb-2 description ">
+                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
+                                    </p>
+                                    <div class="form-group">
+                                        <select name="" class="form-control base-border font-weight-bold small" id="">
+                                            <option value="">اختر المندوب</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- card3 -->
+                                <div class="card shadow py-3 px-2 radius border-0">
+                                    <div class="img text-center ">
+                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
+                                    </div>
+                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
+                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
+                                    <p class="pb-2 description ">
+                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
+                                    </p>
+                                    <div class="form-group">
+                                        <select name="" class="form-control base-border font-weight-bold small" id="">
+                                            <option value="">اختر المندوب</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- card4 -->
+                                <div class="card shadow py-3 px-2 radius border-0">
+                                    <div class="img text-center ">
+                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
+                                    </div>
+                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
+                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
+                                    <p class="pb-2 description ">
+                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
+                                    </p>
+                                    <div class="form-group">
+                                        <select name="" class="form-control base-border font-weight-bold small" id="">
+                                            <option value="">اختر المندوب</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="customers-table">
                         <h5 class="title-with-border">
-                            <span><i class="fas fa-users mx-2 "></i></span>العملاء
+                            <span><i class="fab fa-shopify mx-2 "></i></span>المستخدمين
                         </h5>
                         <div class="table-responsive my-3">
-                            <table id="example" class="display text-center table-borderless nowrap" width="100%"></table>
+                            <table id="ordersTable" class="display text-center table-borderless nowrap text-center" width="100%">
+
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -215,7 +266,6 @@
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Arabic.json"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/main.js "></script>
 
 </body>

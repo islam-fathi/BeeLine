@@ -203,9 +203,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 mb-3" style="padding: 0 2rem;">
-                                <div class="data radius bg-white row">
+                        <div class="row radius bg-white" style="padding: 0 .2rem;">
+                            <div class="title w-100 d-flex align-items-center justify-content-between py-2 px-2 border-bottom bg-white">
+                                <h6 class="font-weight-bold cards-title mb-0">طلبات اليوم</h6>
+                                <a href="" class="show-all">الكل</a>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="data  bg-white row">
                                     <div class="col-4 d-flex align-items-center justify-content-center p-0">
                                         <div class="chart3" data-percent="30">
                                             <div class="position-absolute">
@@ -214,23 +219,52 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="progress my-3">
-                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="background-color: #6BF5A2;"></div>
-                                                </div>
-                                                <div class="progress my-3">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <div class="progress my-3">
-                                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <div class="progress my-3">
-                                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="col-8 d-flex flex-column justify-content-between">
+                                        <div class="row progresses-holder align-items-center justify-content-between">
+                                            <div class="col-md-6">
+                                                <span class="title">طلبات مكتملة</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-center green m-0">79%</p>
+                                                <div class="meter">
+                                                    <span class="green" style="width: 79%"></span>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row progresses-holder align-items-center justify-content-between">
+                                            <div class="col-md-6">
+                                                <span class="title">طلبات جاري توصيلها</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-center blue m-0">68%</p>
+                                                <div class="meter">
+                                                    <span class="blue" style="width: 68%"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row progresses-holder align-items-center justify-content-between">
+                                            <div class="col-md-6">
+                                                <span class="title">طلبات مرتجعة</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-center orange m-0">45%</p>
+                                                <div class="meter">
+                                                    <span class="orange" style="width: 45%"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row progresses-holder align-items-center justify-content-between">
+                                            <div class="col-md-6">
+                                                <span class="title">طلبات ملغية</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-center red m-0">50%</p>
+                                                <div class="meter">
+                                                    <span class="red" style="width: 50%"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

@@ -37,6 +37,10 @@
     color: #51CEC2;
 }
 
+.base-border {
+    border: 1px solid #F9D036 !important;
+}
+
 button {
     cursor: pointer !important;
 }
@@ -55,6 +59,48 @@ button {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.green {
+    color: #6BF5A2!important;
+}
+
+.blue {
+    color: #6B99F5!important;
+}
+
+.orange {
+    color: #FBBC73!important;
+}
+
+.red {
+    color: #FB738A!important;
+}
+
+.accept-btn {
+    background-color: #30C152 !important;
+    color: #FFF;
+}
+
+.reject-btn {
+    background-color: #EF476F !important;
+    color: #FFF;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+select {
+    cursor: pointer;
+}
+
+table tr {
+    line-height: 35px;
+}
+
+tr.shadow-sm {
+    box-shadow: 0 0.250rem .9rem rgba(0, 0, 0, .075)!important;
 }
 
 
@@ -258,7 +304,7 @@ nav .search-holder button.input-group-text {
 
 .description {
     font-size: 12px;
-    color: #C1C1C1;
+    color: #999999;
 }
 
 .description {
@@ -304,6 +350,57 @@ a.show-all {
 }
 
 
+/* progress  */
+
+.progresses-holder span.title {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.progresses-holder p {
+    font-size: 9px;
+}
+
+.meter {
+    height: 8px;
+    /* Can be anything */
+    position: relative;
+    background: #F1F2F6;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.meter>span.green {
+    background-color: #6BF5A2;
+    background-image: linear-gradient( center bottom, #6BF5A2 37%, #6BF5A2 69%);
+}
+
+.meter>span.blue {
+    background-color: #6B99F5;
+    background-image: linear-gradient( center bottom, #6B99F5 37%, #6B99F5 69%);
+}
+
+.meter>span.orange {
+    background-color: #FBBC73;
+    background-image: linear-gradient( center bottom, #FBBC73 37%, #FBBC73 69%);
+}
+
+.meter>span.red {
+    background-color: #FB738A;
+    background-image: linear-gradient( center bottom, #FB738A 37%, #FB738A 69%);
+}
+
+
 /* user pages  */
 
 h5.title-with-border {
@@ -331,15 +428,21 @@ h5.title-with-border span {
 
 /* dataTables  */
 
+div.dataTables_wrapper {
+    width: auto;
+    margin: 0 auto;
+}
+
 .dataTables_wrapper .dataTables_filter {
     float: left;
     margin: 0 5px;
 }
 
-.dataTables_wrapper thead {
+.dataTables_wrapper thead,
+table thead {
     background-color: #F9D036;
     color: #000;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
 table.dataTable thead .sorting,
@@ -383,7 +486,7 @@ table.dataTable thead .sorting_desc {
 table#agent.dataTable thead th {
     border-bottom: 0 !important;
     padding: 0 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 600 !important;
 }
 
@@ -469,4 +572,25 @@ table.dataTable tbody tr.odd:hover,
 table.dataTable tbody tr.even:hover {
     background-color: #F9ECBB !important;
     cursor: pointer;
+}
+
+.dt-buttons .dt-button.buttons-pdf.buttons-html5,
+.dt-button.buttons-excel.buttons-html5 {
+    background-color: #EF476F !important;
+    color: #fff !important;
+    padding: 3px 20px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.dt-buttons .dt-button.buttons-pdf.buttons-html51 {
+    background-color: #EF476F !important;
+}
+
+.dt-button.buttons-excel.buttons-html5 {
+    background-color: #2EC4B6 !important;
 }

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -134,74 +133,66 @@
             <div class="container py-4">
                 <div class="add-customer">
                     <h5 class="title-with-border">
-                        <span><i class="fas fa-plus-circle mx-2 "></i></span>إضافة عميل جديد
+                        <span><i class="fas fa-plus-circle mx-2 "></i></span>إضافة سعر
                     </h5>
                     <div class="form-holder radius bg-white p-4 my-5">
                         <form action="">
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <label>اسم العميل</label>
-                                        <input type="email" class="form-control">
+                                        <label>المحافظة</label>
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                    <label>رقم الجوال</label>
-                                    <div class="row ">
-                                        <div class="col-3 ">
-                                            <div class="form-group">
-                                                <select class="form-control p-0" id="exampleFormControlSelect1">
-                                                <option data-countryCode="DZ" value="213">Algeria (+213)</option>
-                                                <option data-countryCode="AD" value="376">Andorra (+376)</option>
-                                                <option data-countryCode="AO" value="244">Angola (+244)</option>
-                                            </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-9">
-                                            <div class="form-group ">
-                                                <input type="tel" class="form-control mw-100">
-                                            </div>
-                                        </div>
+                                    <div class="form-group">
+                                        <label>المنطقة</label>
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                    <label>البريد الالكتروني </label>
-                                    <input type="email" class="form-control">
+                                    <div class="form-group">
+                                        <label>الفئة</label>
+                                        <input type="" class="form-control">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <label>كلمة المرور</label>
-                                        <input type="password" class="form-control">
+                                        <label>الداخلية</label>
+                                        <input type="" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <label>تأكيد كلمة المرور</label>
-                                        <input type="password" class="form-control">
+                                        <label>الخارجية</label>
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-4  justify-content-center align-items-center d-flex">
-                                    <div class="row justify-content-between w-100">
-                                        <div class="col-6 d-flex align-items-center justify-content-end flex-row-reverse">
-                                            <label class="light-blue mb-0" for="project_owner">هل انت صاحب مشروع</label>
-                                            <input type="checkbox" class="w-auto mr-1" id="project_owner">
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit " class="btn btn-warning text-dark w-100 py-1 d-block m-auto ">إضافة</button>
-                                        </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label>البعيدة</label>
+                                        <input type="text" class="form-control">
                                     </div>
+                                </div>
+
+                            </div>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-md-4">
+                                    <button type="submit " class="btn btn-warning text-dark w-100 py-1 d-block m-auto ">إضافة</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="customers-table">
                         <h5 class="title-with-border">
-                            <span><i class="fas fa-users mx-2 "></i></span>العملاء
+                            <span><i class="fas fa-dollar-sign mx-2 "></i></span>الأسعار
                         </h5>
                         <div class="table-responsive my-3">
-                            <table id="example" class="display text-center table-borderless nowrap" width="100%"></table>
+                            <table id="pricesTable" class="display text-center table-borderless nowrap" width="100%">
+
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -214,8 +205,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Arabic.json"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.html5.min.js"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/main.js "></script>
 
 </body>
