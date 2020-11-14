@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/components.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/pages/data-list-view.css">
+    <!-- END: Page CSS-->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+    <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,10 +36,10 @@
                 <h6 class="mx-1 mb-0 text-dark">أسامة عسكر</h6>
             </a>
             <div class="list-group list-group-flush mt-4">
-                <a href="#" class="list-group-item border-0 list-group-item-action d-flex align-items-center active">
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex align-items-center mb-2 active">
                     <i class="fas fa-home mx-2"></i> الرئيسية
                 </a>
-                <a href="#data-entry" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between " data-toggle="collapse">
+                <a href="#data-entry" class="list-group-item border-0 list-group-item-action mb-2 d-flex align-items-center justify-content-between " data-toggle="collapse">
                     <span><i class="fas fa-plus-circle mx-2"></i> إدخال بيانات</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
@@ -37,54 +50,53 @@
                         <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
                     </ul>
                 </div>
-                <a href="#" class="list-group-item border-0 list-group-item-action d-flex align-items-center ">
+                <a href="#" class="list-group-item border-0 list-group-item-action mb-2 d-flex align-items-center ">
                     <i class="fas fa-cart-arrow-down mx-2"></i> الطلبات
                 </a>
-                <a href="#prices" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
+                <a href="#prices" class="list-group-item border-0 list-group-item-action mb-2 d-flex align-items-center justify-content-between" data-toggle="collapse">
                     <span><i class="fas fa-dollar-sign mx-2"></i> أسعار التوصيل</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="prices">
                     <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">داخلي</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">خارجي</a></li>
                     </ul>
                 </div>
-                <a href="#acounts" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
+                <a href="#acounts" class="list-group-item border-0 mb-2 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
                     <span><i class="fas fa-calculator mx-2"></i> الحسابات</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="acounts">
                     <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">صرف رواتب</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">مصروفات عامة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">مصروفات سيارة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">سند قبض</a></li>
                     </ul>
                 </div>
-                <a href="#reports" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
+                <a href="#reports" class="list-group-item border-0 mb-2 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
                     <span><i class="fas fa-chart-line mx-2"></i> التقارير</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="reports">
                     <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">تقارير عامة</a></li>
                         <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
                         <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
                     </ul>
                 </div>
-                <a href="#users" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
-                    <span><i class="far fa-user mx-2"></i> المستخدمون</span>
+                <a href="#users" class="list-group-item border-0 mb-2 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
+                    <span><i class="far fa-user mx-2"></i> المستخدمين</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="users">
                     <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">إضافة مستخدمين</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">إضافة صلاحيات</a></li>
                     </ul>
                 </div>
-                <a href="#setting" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
+                <a href="#setting" class="list-group-item border-0 mb-2 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
                     <span><i class="fas fa-cog mx-2"></i> الإعدادات</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
@@ -95,11 +107,11 @@
                         <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
                     </ul>
                 </div>
-                <div class="custom-control custom-switch d-flex align-items-center justify-content-center flex-row-reverse">
-                    <label class="custom-control-label" for="customSwitch1">الوضع المظلم</label>
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <div class="custom-control custom-switch custom-switch-warning mr-2 mb-1">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                    <label class="custom-control-label" for="customSwitch7"></label>
+                    <span>الوضع المظلم</span>
                 </div>
-
             </div>
         </div>
         <!-- sidebar-wrapper -->
@@ -189,7 +201,7 @@
                                             <input type="checkbox" class="w-auto mr-1" id="project_owner">
                                         </div>
                                         <div class="col-6">
-                                            <button type="submit " class="btn btn-warning text-dark w-100 py-1 d-block m-auto ">إضافة</button>
+                                            <button type="submit " class="btn base-bg text-dark w-100 py-1 d-block m-auto ">إضافة</button>
                                         </div>
                                     </div>
                                 </div>
@@ -197,26 +209,274 @@
                         </form>
                     </div>
                     <div class="customers-table">
-                        <h5 class="title-with-border">
-                            <span><i class="fas fa-users mx-2 "></i></span>العملاء
-                        </h5>
-                        <div class="table-responsive my-3">
-                            <table id="example" class="display text-center table-borderless nowrap" width="100%"></table>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="title-with-border">
+                                    <span><i class="fas fa-users mx-2 "></i></span>العملاء
+                                </h5>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center justify-content-end">
+                                <div class="input-group search-holder mt-3 mt-md-0 w-50 mr-5 border radius bg-white">
+                                    <div class="input-group-prepend bg-white radius">
+                                        <button type="submit" class="input-group-text bg-white border-0 radius" id="basic-addon1">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control border-0 radius" placeholder="بحث">
+                                </div>
+                                <div class="form-group m-0 d-flex align-items-center justify-content-between" style="width: 100px;">
+                                    <label for="" class="font-weight-bold d-inline px-2">اظهار</label>
+                                    <input type="number" value="5" class="form-control d-inline">
+                                    </input>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="table-responsive my-3">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                            <div class="clear"></div>
+                            <table class="table text-center data-list-view bg-white rounded-lg nowrap dataTable no-footer dt-checkboxes-select data-list-view" id="DataTables_Table_1" role="grid">
+                                <thead>
+                                    <tr role="row" class="base-bg">
+                                        <th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15px;" data-col="0" aria-label=""><input type="checkbox"></th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CATEGORY: activate to sort column ascending">Id</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">اسم العميل</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">رقم الجوال</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="NAME: activate to sort column descending">البريد الالكتروني</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="POPULARITY: activate to sort column ascending">صاحب مشروع </th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="PRICE: activate to sort column ascending"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr role="row" class="odd">
+                                        <td class="dt-checkboxes-cell"></td>
+                                        <td class="product-category">1234</td>
+                                        <td class="product-category">
+                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
+                                                <img src="images/user.jpg" width="35px" class="profile_pic rounded-circle mx-1" alt="" style="border: 2px solid #FFF;">
+                                                <h6 class="mx-1 mb-0 text-dark">أسامة عسكر</h6>
+                                            </a>
+                                        </td>
+                                        <td class="product-category">
+                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
+                                                <img src="icons/kwait.svg" width="35px" class="profile_pic mx-1" alt="" style="border: 2px solid #FFF;">
+                                                <h6 class="mx-1 mb-0 text-dark">+201234567890</h6>
+                                            </a>
+                                        </td>
+                                        <td class="product-category">osamaaskar100@gmail.com</td>
+                                        <td class="product-category"><i class="fas fa-check text-success mx-1"></i></td>
+                                        <td class="product-action ">
+                                            <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1" style="background-color: #6788FF !important;">
+                                                <i class="fas fa-pen mx-1"></i>تعديل</button>
+                                            <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1" style="background-color: #FF9391 !important;">
+                                                    <i class="fas fa-trash mx-1"></i>
+                                                    حذف
+                                                </button>
+                                            <button class="small text-white btn-sm btn-primary border-0 px-1 mb-1 " style="background-color: #FC7438!important">
+                                                    <i class="fas fa-lock mx-1"></i>حظر</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js "></script>
-    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Arabic.json"></script>
-    <script src="js/jquery.easypiechart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="js/main.js "></script>
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/ui/data-list-view.js"></script>
+    <!-- END: Page JS-->
+    <script src="js/main.js"></script>
+    <script>
+        // /*=========================================================================================
+        //     File Name: data-list-view.js
+        //     Description: List View
+        //     ----------------------------------------------------------------------------------------
+        //     Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+        //     Author: PIXINVENT
+        //     Author URL: http://www.themeforest.net/user/pixinvent
+        // ==========================================================================================*/
+
+        $(document).ready(function() {
+            "use strict"
+            // init list view datatable
+            var dataListView = $(".data-list-view").DataTable({
+                responsive: false,
+                columnDefs: [{
+                    orderable: true,
+                    targets: 0,
+                    checkboxes: {
+                        selectRow: true
+                    }
+                }],
+                dom: '<"top"<"actions action-btns"B><"action-filters"lf>><"clear">rt<"bottom"<"actions">p>',
+                oLanguage: {
+                    sLengthMenu: "_MENU_",
+                    sSearch: ""
+                },
+                aLengthMenu: [
+                    [4, 10, 15, 20],
+                    [4, 10, 15, 20]
+                ],
+                select: {
+                    style: "multi"
+                },
+                order: [
+                    [1, "asc"]
+                ],
+                bInfo: false,
+                pageLength: 4,
+                buttons: [{
+                    text: "<i class='feather icon-plus'></i> Add New",
+                    action: function() {
+                        $(this).removeClass("btn-secondary")
+                        $(".add-new-data").addClass("show")
+                        $(".overlay-bg").addClass("show")
+                        $("#data-name, #data-price").val("")
+                        $("#data-category, #data-status").prop("selectedIndex", 0)
+                    },
+                    className: "btn-outline-primary"
+                }],
+                initComplete: function(settings, json) {
+                    $(".dt-buttons .btn").removeClass("btn-secondary")
+                }
+            });
+
+            dataListView.on('draw.dt', function() {
+                setTimeout(function() {
+                    if (navigator.userAgent.indexOf("Mac OS X") != -1) {
+                        $(".dt-checkboxes-cell input, .dt-checkboxes").addClass("mac-checkbox")
+                    }
+                }, 50);
+            });
+
+            // init thumb view datatable
+            var dataThumbView = $(".data-thumb-view").DataTable({
+                responsive: false,
+                columnDefs: [{
+                    orderable: true,
+                    targets: 0,
+                    checkboxes: {
+                        selectRow: true
+                    }
+                }],
+                dom: '<"top"<"actions action-btns"B><"action-filters"lf>><"clear">rt<"bottom"<"actions">p>',
+                oLanguage: {
+                    sLengthMenu: "_MENU_",
+                    sSearch: ""
+                },
+                aLengthMenu: [
+                    [4, 10, 15, 20],
+                    [4, 10, 15, 20]
+                ],
+                select: {
+                    style: "multi"
+                },
+                order: [
+                    [1, "asc"]
+                ],
+                bInfo: false,
+                pageLength: 4,
+                buttons: [{
+                    text: "<i class='feather icon-plus'></i> Add New",
+                    action: function() {
+                        $(this).removeClass("btn-secondary")
+                        $(".add-new-data").addClass("show")
+                        $(".overlay-bg").addClass("show")
+                    },
+                    className: "btn-outline-primary"
+                }],
+                initComplete: function(settings, json) {
+                    $(".dt-buttons .btn").removeClass("btn-secondary")
+                }
+            })
+
+            dataThumbView.on('draw.dt', function() {
+                setTimeout(function() {
+                    if (navigator.userAgent.indexOf("Mac OS X") != -1) {
+                        $(".dt-checkboxes-cell input, .dt-checkboxes").addClass("mac-checkbox")
+                    }
+                }, 50);
+            });
+
+            // To append actions dropdown before add new button
+            var actionDropdown = $(".actions-dropodown")
+            actionDropdown.insertBefore($(".top .actions .dt-buttons"))
+
+
+            // Scrollbar
+            if ($(".data-items").length > 0) {
+                new PerfectScrollbar(".data-items", {
+                    wheelPropagation: false
+                })
+            }
+
+            // Close sidebar
+            $(".hide-data-sidebar, .cancel-data-btn, .overlay-bg").on("click", function() {
+                $(".add-new-data").removeClass("show")
+                $(".overlay-bg").removeClass("show")
+                $("#data-name, #data-price").val("")
+                $("#data-category, #data-status").prop("selectedIndex", 0)
+            })
+
+            // On Edit
+            $('.action-edit').on("click", function(e) {
+                e.stopPropagation();
+                $('#data-name').val('Altec Lansing - Bluetooth Speaker');
+                $('#data-price').val('$99');
+                $(".add-new-data").addClass("show");
+                $(".overlay-bg").addClass("show");
+            });
+
+            // On Delete
+            $('.action-delete').on("click", function(e) {
+                e.stopPropagation();
+                $(this).closest('td').parent('tr').fadeOut();
+            });
+
+            // dropzone init
+            Dropzone.options.dataListUpload = {
+                complete: function(files) {
+                    var _this = this
+                        // checks files in class dropzone and remove that files
+                    $(".hide-data-sidebar, .cancel-data-btn, .actions .dt-buttons").on(
+                        "click",
+                        function() {
+                            $(".dropzone")[0].dropzone.files.forEach(function(file) {
+                                file.previewElement.remove()
+                            })
+                            $(".dropzone").removeClass("dz-started")
+                        }
+                    )
+                }
+            }
+            Dropzone.options.dataListUpload.complete()
+
+            // mac chrome checkbox fix
+            if (navigator.userAgent.indexOf("Mac OS X") != -1) {
+                $(".dt-checkboxes-cell input, .dt-checkboxes").addClass("mac-checkbox")
+            }
+        })
+    </script>
 
 </body>
 

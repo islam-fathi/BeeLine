@@ -10,6 +10,10 @@
 
 /* overwrite bootstrap inputs style  */
 
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1 !important;
+}
+
 
 /* our classes */
 
@@ -39,6 +43,10 @@
 
 .base-border {
     border: 1px solid #F9D036 !important;
+}
+
+.base-bg {
+    background-color: #F9D036 !important;
 }
 
 button {
@@ -127,7 +135,7 @@ body.splash {
 }
 
 .form-holder form input {
-    width: 320px;
+    /* width: 320px; */
 }
 
 .form-holder form label {
@@ -206,6 +214,15 @@ body.splash {
 
 #wrapper.toggled #sidebar-wrapper {
     margin-right: 0;
+}
+
+#sidebar-wrapper .list-group .list-group-item i {
+    font-weight: 600 !important;
+}
+
+#sidebar-wrapper .list-group .list-group-item:hover {
+    background-color: #012344;
+    color: #F9D036;
 }
 
 @media (min-width: 768px) {
@@ -511,18 +528,18 @@ table.dataTable td {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     background-color: #fff !important;
-    padding: 5px 12px !important;
+    padding: 3px !important;
     border: 1px solid #dee2e6;
     color: #000 !important;
     font-weight: bold !important;
+    margin-left: 5px;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
     font-weight: normal;
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button.current,
-.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+.pagination .page-item {
     background: unset !important;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -531,9 +548,29 @@ table.dataTable td {
     -o-border-radius: 3px;
 }
 
+.pagination .page-item.active .page-link {
+    z-index: 3;
+    border-radius: unset !important;
+    background-color: transparent !important;
+    color: #000;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-border-radius: unset !important;
+    -moz-border-radius: unset !important;
+    -ms-border-radius: unset !important;
+    -o-border-radius: unset !important;
+}
+
+.pagination .page-item.active,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
     background-color: #F9D036 !important;
     border: 1px solid #F9D036 !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
@@ -593,4 +630,132 @@ table.dataTable tbody tr.even:hover {
 
 .dt-button.buttons-excel.buttons-html5 {
     background-color: #2EC4B6 !important;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: flex-start;
+}
+
+table.data-list-view.dataTable thead th:first-child,
+table.data-thumb-view.dataTable thead th:first-child {
+    padding-right: 10px;
+}
+
+.pagination .page-item:first-child:not(.prev-item) .page-link,
+.pagination .page-item:last-child:not(.next-item) .page-link {
+    background-color: transparent;
+}
+
+.pagination .page-item.next .page-link:after,
+.pagination .page-item.previous .page-link:after {
+    content: "" !important;
+}
+
+.pagination .page-item.previous .page-link::before {
+    content: "" !important;
+}
+
+table.data-list-view.dataTable thead .sorting_asc:before,
+table.data-list-view.dataTable thead .sorting_desc:before,
+table.data-list-view.dataTable thead .sorting:before,
+table.data-thumb-view.dataTable thead .sorting_asc:before,
+table.data-thumb-view.dataTable thead .sorting_desc:before,
+table.data-thumb-view.dataTable thead .sorting:before,
+table.data-list-view.dataTable thead .sorting_asc:after,
+table.data-list-view.dataTable thead .sorting_desc:after,
+table.data-list-view.dataTable thead .sorting:after,
+table.data-thumb-view.dataTable thead .sorting_asc:after,
+table.data-thumb-view.dataTable thead .sorting_desc:after,
+table.data-thumb-view.dataTable thead .sorting:after {
+    content: "" !important;
+}
+
+.top {
+    display: none;
+}
+
+.dataTables_wrapper.no-pagination div.dataTables_paginate {
+    display: none !important;
+}
+
+.custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+.custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.45rem;
+    padding-right: 1.5rem;
+}
+
+.custom-switch {
+    padding-right: 0;
+}
+
+.custom-switch .custom-control-label {
+    height: 1.571rem;
+    width: 3.1rem;
+    padding: 0;
+    background-color: #012344;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.custom-switch .custom-control-label::before {
+    border: none;
+    background-color: #E2E2E2;
+    height: 1.571rem;
+    right: -0.2857rem;
+    box-shadow: none !important;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 0;
+    right: 0;
+}
+
+.custom-switch .custom-control-label::before {
+    right: -3.5rem;
+    width: 3rem;
+    pointer-events: all;
+    border-radius: 0.857rem;
+}
+
+.custom-switch .custom-control-label:after {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    box-shadow: none;
+    background-color: #F9D036;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
