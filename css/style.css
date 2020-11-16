@@ -95,6 +95,18 @@ button {
     color: #FFF;
 }
 
+.print-btn {
+    background-color: #2EC4B6 !important;
+}
+
+.text-light-blue {
+    color: #2EC4B6 !important;
+}
+
+.text-reject {
+    color: #EF476F !important;
+}
+
 button:hover {
     opacity: .8;
 }

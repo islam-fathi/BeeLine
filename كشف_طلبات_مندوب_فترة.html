@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>كشف طلبات مندوب من فترة</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/datatables.min.css">
     <!-- END: Vendor CSS-->
@@ -19,10 +20,13 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/pages/data-list-view.css">
     <!-- END: Page CSS-->
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
 
     <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <!-- END: Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body class="dashboard-body">
@@ -115,7 +119,7 @@
 
             </div>
         </div>
-        <!-- sidebar-wrapper -->
+        <!-- sidebar-wrapper
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -146,199 +150,176 @@
             <!-- end of navbar  -->
             <div class="container py-4">
                 <div class="add-customer">
-                    <h5 class="title-with-border">
-                        <span><i class="fas fa-plus-circle mx-2 text-hide"></i></span>الطلبات الواردة
+                    <h5 class="title-with-border pb-4">
+                        <span><i class="fas fa-plus-circle invisible"></i></span>كشف طلبات مندوب من فترة
                     </h5>
-                    <div class="cards-holder px-5 py-4 radius bg-white shadow my-5">
-                        <div class="row">
-
-                            <div class="col-md-3">
-                                <!-- card1 -->
-                                <div class="card shadow py-3 px-2 radius border-0">
-                                    <div class="img text-center ">
-                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
-                                    </div>
-                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
-                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
-                                    <p class="pb-2 description ">
-                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
-                                    </p>
-                                    <div class="form-group">
-                                        <select name="" class="form-control base-border font-weight-bold small" id="">
-                                            <option value="">اختر المندوب</option>
-                                        </select>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <!-- card2 -->
-                                <div class="card shadow py-3 px-2 radius border-0">
-                                    <div class="img text-center ">
-                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
-                                    </div>
-                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
-                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
-                                    <p class="pb-2 description ">
-                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
-                                    </p>
-                                    <div class="form-group">
-                                        <select name="" class="form-control base-border font-weight-bold small" id="">
-                                            <option value="">اختر المندوب</option>
-                                        </select>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <!-- card3 -->
-                                <div class="card shadow py-3 px-2 radius border-0">
-                                    <div class="img text-center ">
-                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
-                                    </div>
-                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
-                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
-                                    <p class="pb-2 description ">
-                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
-                                    </p>
-                                    <div class="form-group">
-                                        <select name="" class="form-control base-border font-weight-bold small" id="">
-                                            <option value="">اختر المندوب</option>
-                                        </select>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <!-- card4 -->
-                                <div class="card shadow py-3 px-2 radius border-0">
-                                    <div class="img text-center ">
-                                        <img src="images/user.jpg " width="45px " class="p-1 rounded-circle " alt=" ">
-                                    </div>
-                                    <a href=" " class="pb-2 d-block text-center username ">ايمن احمد عسكر</a>
-                                    <p class="px-2 description ">طلب توصيل كرسي مكاتب كبيرة وليست صغيرة </p>
-                                    <p class="pb-2 description ">
-                                        <i class="fas fa-map-marker-alt mr-2 "></i> من الكويت الى قطر
-                                    </p>
-                                    <div class="form-group">
-                                        <select name="" class="form-control base-border font-weight-bold small" id="">
-                                            <option value="">اختر المندوب</option>
-                                        </select>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white accept-btn w-100 py-1 radius">موافقة</button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit " class="btn text-white reject-btn w-100 py-1 radius">رفض</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                     <div class="customers-table">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h5 class="title-with-border">
-                                    <span><i class="fab fa-shopify mx-2 "></i></span>الطلبات
-                                </h5>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center justify-content-end">
-                                <div class="input-group search-holder mt-3 mt-md-0 w-50 mr-5 border radius bg-white">
-                                    <div class="input-group-prepend bg-white radius">
-                                        <button type="submit" class="input-group-text bg-white border-0 radius" id="basic-addon1">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control border-0 radius" placeholder="بحث">
+                            <div class="col-md-8 col-lg-8 d-flex align-items-center justify-content-between">
+                                <div class="form-group m-0" style="width: 160px;">
+                                    <label>المندوب</label>
+                                    <select class="form-control">
+                                    </select>
                                 </div>
-                                <div class="form-group m-0 d-flex align-items-center justify-content-between" style="width: 100px;">
-                                    <label for="" class="font-weight-bold d-inline px-2">اظهار</label>
-                                    <input type="number" value="5" class="form-control d-inline">
-                                    </input>
+                                <div class="form-group m-0">
+                                    <label>من تاريخ</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group m-0">
+                                    <label>الى تاريخ</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <button type="button" class="btn base-bg px-2 position-relative" style="top: .9rem;">
+                                        <i class="fas fa-search"></i>
+                                </button>
+                                <div class="radios d-flex align-items-center justify-content-between">
+                                    <div class="form-check text-center d-block">
+                                        <label class="form-check-label d-block" for="exampleRadios1">
+                                            عرض يومي
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    </div>
+                                    <div class="form-check text-center d-block">
+                                        <label class="form-check-label d-block" for="exampleRadios1">
+                                            عرض يومي
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-6">
+                                        <div class="form-group m-0">
+                                            <label>تصدير</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>PDF</option>
+                                                <option>Excel</option>
+                                                <option>HTML5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center justify-content-between mt-4">
+                                        <button type="submit " class="btn print-btn py-1 radius text-dark px-4">تصدير</button>
+                                        <button type="submit " class="btn text-white reject-btn py-1 px-4 radius">طباعة</button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive my-3">
+                    <div class="table-responsive">
                         <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                             <div class="clear"></div>
-                            <table class="table text-center data-list-view bg-white rounded-lg nowrap dataTable no-footer dt-checkboxes-select" id="DataTables_Table_0" role="grid">
+                            <table class="table text-center data-list-view bg-white nowrap rounded-lg dataTable no-footer dt-checkboxes-select" id="DataTables_Table_0" role="grid">
                                 <thead>
                                     <tr role="row" class="base-bg">
-                                        <th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15px;" data-col="0" aria-label=""><input type="checkbox"></th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CATEGORY: activate to sort column ascending">Id</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="NAME: activate to sort column descending">وصف الطلب</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="POPULARITY: activate to sort column ascending">تاريخ الطلب </th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">عنوان الطلب</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">رقم هاتف المستلم</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">سعر اطلب</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">اسم المندوب</th>
+                                        <th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 35px;" data-col="0" aria-label=""><input type="checkbox"></th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="NAME: activate to sort column descending">رقم الطلب</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CATEGORY: activate to sort column ascending">وصف الطلب</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="POPULARITY: activate to sort column ascending">تاريخ الطلب</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">رقم العميل</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">العنوان</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">سعر الطلب</th>
                                         <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">سعر التوصيل</th>
                                         <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">مدفوع مسبقا</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending"> وقت وصول الطلب</th>
                                         <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">حالة الطلب</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="PRICE: activate to sort column ascending"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr role="row" class="odd">
                                         <td class="dt-checkboxes-cell"><input type="checkbox" class="dt-checkboxes"></td>
-                                        <td class="product-category">1234</td>
-                                        <td class="product-category">توصيل ساعات</td>
-                                        <td class="product-category">الكويت-عمران-برج البترول</td>
+                                        <td class="product-category">1</td>
+                                        <td class="product-category">ساعات مودرن</td>
+                                        <td class="product-category">8-9-2020</td>
                                         <td class="product-category">
                                             <a class="sidebar-heading d-flex align-items-center justify-content-center">
                                                 <img src="icons/kwait.svg" width="35px" class="profile_pic mx-1" alt="" style="border: 2px solid #FFF;">
                                                 <h6 class="mx-1 mb-0 text-dark">+201234567890</h6>
                                             </a>
                                         </td>
-                                        <td class="product-category">20 دينار</td>
-                                        <td class="product-category" style="color: #5BD1C6;">حسام محمود</td>
-                                        <td class="product-category">5 دينار</td>
-                                        <td class="product-category"><i class="fas fa-check text-success mx-1"></i></td>
-                                        <td class="product-category">3:40 AM</td>
+                                        <td class="product-category">الكويت-شارع العسال</td>
+                                        <td class="product-category">3دينار</td>
+                                        <td class="product-category">3دينار</td>
+                                        <td class="product-category"><i class="fas fa-check text-success"></i></td>
                                         <td class="product-category">
                                             <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1" style="background-color: #6788FF !important;">
-                                                تم التوصيل
-                                            </button>
-                                        </td>
-                                        <td class="product-action ">
-                                            <span class="action-delete text-danger"><i class="feather icon-trash"></i></span>
-                                            <span class="action-edit text-primary"><i class="feather icon-edit-2"></i></span>
+                                                تم التوصيل</button>
                                         </td>
                                     </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="dt-checkboxes-cell"><input type="checkbox" class="dt-checkboxes"></td>
+                                        <td class="product-category">1</td>
+                                        <td class="product-category">ساعات مودرن</td>
+                                        <td class="product-category">8-9-2020</td>
+                                        <td class="product-category">
+                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
+                                                <img src="icons/kwait.svg" width="35px" class="profile_pic mx-1" alt="" style="border: 2px solid #FFF;">
+                                                <h6 class="mx-1 mb-0 text-dark">+201234567890</h6>
+                                            </a>
+                                        </td>
+                                        <td class="product-category">الكويت-شارع العسال</td>
+                                        <td class="product-category">3دينار</td>
+                                        <td class="product-category">3دينار</td>
+                                        <td class="product-category"><i class="fas fa-check text-success"></i></td>
+                                        <td class="product-category">
+                                            <button class="small text-white btn-sm reject-btn border-0 mb-1 px-1">
+                                                تم التوصيل</button>
+                                        </td>
+                                    </tr>
+
                                 </tbody>
                             </table>
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-md-2">
+                                    <div class="form-group m-0 d-flex align-items-center justify-content-between">
+                                        <label for="" class="font-weight-bold d-inline px-2 mb-0">اظهار</label>
+                                        <input type="number" value="5" class="form-control d-inline">
+                                        </input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-4 align-items-center justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="totals radius bg-white shadow-sm text-center px-2 py-3 text-light-blue">
+                                                <p class="font-weight-bold">اجمالي عدد الطلبات</p>
+                                                <span class="d-flex justify-content-center small align-items-center">
+                                                    <h2 class="mb-0 font-weight-bold">45 </h2>  
+                                                    طلب
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="totals radius bg-white shadow-sm text-center px-2 py-3 text-reject">
+                                                <p class="font-weight-bold">اجمالي الفواتير</p>
+                                                <span class="d-flex justify-content-center small align-items-center">
+                                                    <h2 class="mb-0 font-weight-bold">45 </h2>  
+                                                    طلب
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="totals radius bg-white shadow-sm text-center px-2 py-3 text-primary">
+                                                <p class="font-weight-bold">اجمالي سعر التوصيل</p>
+                                                <span class="d-flex justify-content-center small align-items-center">
+                                                    <h2 class="mb-0 font-weight-bold">45 </h2>  
+                                                    طلب
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="app-assets/vendors/js/vendors.min.js"></script>
