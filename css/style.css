@@ -211,13 +211,13 @@ body.splash {
 
 #sidebar-wrapper .list-group a.active {
     background-color: #012344;
-    color: #F9D036;
+    color: #F9D036 !important;
 }
 
 .list-group-item-action:focus,
 .list-group-item-action:hover {
     background-color: #012344;
-    color: #F9D036;
+    color: #F9D036 !important;
 }
 
 #page-content-wrapper {
@@ -252,6 +252,35 @@ body.splash {
 
 .collapse ul li a {
     color: #fff;
+}
+
+.list-group-item-action {
+    color: #012344 !important;
+}
+
+.list-group-item-action:hover {
+    color: #F9D036 !important;
+}
+
+.collapse ul li a {
+    font-size: 16px !important;
+}
+
+#sidebar-wrapper .list-group .list-group-item i {
+    font-weight: 600 !important;
+    font-size: 12px;
+}
+
+.collapse ul li a {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+}
+
+
+/* reports bg  */
+
+.reborts-bg {
+    background-color: #FFE480 !important;
 }
 
 

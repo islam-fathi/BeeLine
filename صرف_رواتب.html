@@ -48,13 +48,13 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="data-entry">
-                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
+                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled py-2">
                         <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
                         <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
                         <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
                     </ul>
                 </div>
-                <a href="#" class="list-group-item border-0 list-group-item-action d-flex align-items-center ">
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex align-items-center">
                     <i class="fas fa-cart-arrow-down mx-2"></i> الطلبات
                 </a>
                 <a href="#prices" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
@@ -62,10 +62,9 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="prices">
-                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled py-2">
+                        <li class="mb-2"><a href="" class="main-hover">داخلي</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">خارجي</a></li>
                     </ul>
                 </div>
                 <a href="#acounts" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
@@ -73,10 +72,11 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="acounts">
-                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled py-2">
+                        <li class="mb-2"><a href="" class="main-hover">صرف رواتب</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">مصروفات عامة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">مصروفات سيارة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover"> سند قبض</a></li>
                     </ul>
                 </div>
                 <a href="#reports" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
@@ -84,21 +84,113 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="reports">
-                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
+                    <ul class="reborts-bg main-color d-flex flex-column justify-content-center align-items-center list-unstyled py-2">
+                        <li class="mb-2 w-100">
+                            <a href="#client_report" class="list-group-item border-0 list-group-item-action d-flex align-items-center 
+                            justify-content-around" data-toggle="collapse">
+                                <span> تقارير عملاء</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="client_report">
+                                <ul class="active-bg align-items-center justify-content-center list-unstyled py-2 text-center">
+                                    <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-2 w-100">
+                            <a href="#agent_report" class="list-group-item border-0 list-group-item-action d-flex align-items-center
+                             justify-content-around" data-toggle="collapse">
+                                <span> تقارير المندوبين</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="agent_report">
+                                <ul class="active-bg align-items-center justify-content-center list-unstyled py-2 text-center">
+                                    <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-2 w-100">
+                            <a href="#orders_report" class="list-group-item border-0 list-group-item-action 
+                            d-flex align-items-center justify-content-around" data-toggle="collapse">
+                                <span> تقارير الطلبات</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="orders_report">
+                                <ul class="active-bg align-items-center justify-content-center list-unstyled py-2 text-center">
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات مندوب عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات جميع المندوبين عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف بحالة الطلب</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-2 w-100">
+                            <a href="#public_report" class="list-group-item border-0 list-group-item-action 
+                            d-flex align-items-center justify-content-around" data-toggle="collapse">
+                                <span> تقارير عامة</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="public_report">
+                                <ul class="active-bg align-items-center justify-content-center list-unstyled py-2 text-center">
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات مندوب عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات جميع المندوبين عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف بحالة الطلب</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-2 w-100">
+                            <a href="#financial_report" class="list-group-item border-0 list-group-item-action 
+                            d-flex align-items-center justify-content-around" data-toggle="collapse">
+                                <span> تقارير مالية</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="financial_report">
+                                <ul class="active-bg align-items-center justify-content-center list-unstyled py-2 text-center">
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات مندوب عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات جميع المندوبين عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف بحالة الطلب</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-2 w-100">
+                            <a href="#akd" class="list-group-item border-0 list-group-item-action 
+                            d-flex align-items-center justify-content-around" data-toggle="collapse">
+                                <span> عقود</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="akd">
+                                <ul class="active-bg align-items-center justify-content-center list-unstyled py-2 text-center">
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات مندوب عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف طلبات جميع المندوبين عن فترة</a></li>
+                                    <li class="mb-2"><a href="" class="main-hover">كشف بحالة الطلب</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#sample" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
+                    <span><i class="far fa-user mx-2"></i> نماذج</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="sample">
+                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled py-2">
                         <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
                         <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
                         <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
                     </ul>
                 </div>
+
                 <a href="#users" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
                     <span><i class="far fa-user mx-2"></i> المستخدمون</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="users">
-                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled py-2">
+                        <li class="mb-2"><a href="" class="main-hover">اضافة مستخدم</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">صلاحيات المستخدمين</a></li>
                     </ul>
                 </div>
                 <a href="#setting" class="list-group-item border-0 list-group-item-action d-flex align-items-center justify-content-between" data-toggle="collapse">
@@ -106,15 +198,22 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse" id="setting">
-                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled">
-                        <li class="mb-2"><a href="" class="main-hover">بيانات العملاء</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات المندوبين</a></li>
-                        <li class="mb-2"><a href="" class="main-hover">بيانات السيارات</a></li>
+                    <ul class="active-bg main-color d-flex flex-column justify-content-start pl-5 align-items-start list-unstyled py-2">
+                        <li class="mb-2"><a href="" class="main-hover">اللغة والترجمة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover"> النسخ الاحتياطي</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">توزيع الطلبات</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">بيانات القوائم المنسدلة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">الاشعارات والرسائل</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">بيانات الشركة</a></li>
+                        <li class="mb-2"><a href="" class="main-hover">نظام العمولات</a></li>
                     </ul>
                 </div>
-                <div class="custom-control custom-switch d-flex align-items-center justify-content-center flex-row-reverse">
-                    <label class="custom-control-label" for="customSwitch1">الوضع المظلم</label>
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <div class="form-check text-center my-3">
+                    الوضع المظلم
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
 
             </div>
