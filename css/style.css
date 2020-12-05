@@ -17,6 +17,72 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* our classes */
 
+body.dark-mode {
+    background-color: #012344e3 !important;
+}
+
+h5.title-with-border.dark-mode {
+    color: #F9D036 !important;
+}
+
+.form-holder.dark-mode {
+    background-color: #012344 !important;
+    color: #fff !important;
+}
+
+.form-holder.dark-mode label {
+    color: #fff !important;
+}
+
+.form-holder.dark-mode .form-control,
+body.dark-mode .form-control,
+body.dark-mode .input-group-prepend button,
+body.dark-mode .input-group.search-holder {
+    background-color: #072e55e3 !important;
+    color: #F9D036 !important;
+}
+
+nav.bg-white.dark-mode {
+    background-color: #012344 !important;
+    border: 0 !important;
+}
+
+nav.bg-white.dark-mode .nav-link i {
+    color: #F9D036 !important;
+}
+
+body.dark-mode table.table {
+    background-color: #012344 !important;
+}
+
+body.dark-mode table.dataTable tbody tr.odd,
+table.dataTable tbody tr.even {
+    background-color: #003a71 !important;
+    color: #FFF !important;
+}
+
+body.dark-mode .navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: #F9D036 !important;
+    color: #012344 !important;
+}
+
+body.dark-mode #sidebar-wrapper.dark-mode {
+    background: #012344e3 !important;
+}
+
+body.dark-mode #sidebar-wrapper.dark-mode .list-group a,
+body.dark-mode #sidebar-wrapper.dark-mode .sidebar-heading h6 {
+    color: #F9D036 !important;
+}
+
+body.dark-mode .form-check {
+    color: #F9D036 !important;
+}
+
+body.dark-mode input:checked+.slider {
+    border: 2px solid #fff !important;
+}
+
 .main-bg {
     background: linear-gradient( #FFFAEC, #FEE085);
 }
@@ -166,6 +232,28 @@ body.splash {
     .dataTables_wrapper .dataTables_filter {
         float: none !important;
     }
+}
+
+@media(min-width:992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+        -o-transform: translateX(200px);
+    }
+}
+
+.dropdown .dropdown-menu::before {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu span.small {
+    font-size: 10px;
 }
 
 
