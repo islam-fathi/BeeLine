@@ -240,9 +240,38 @@
                     </div>
 
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fas fa-bell text-dark"></i></a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell text-dark"></i>
+                            </a>
+                            <div class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item border-bottom" href="#">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="mr-2">
+                                            <h6 class="mb-0 font-weight-bold text-primary">لديك طلب جديد</h6>
+                                            <span class="small text-muted">نص تجريبي كليلي ايس</span>
+                                        </div>
+                                        <span class="small text-muted">
+                                            منذ 5 ساعات
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="mr-2">
+                                            <h6 class="mb-0 font-weight-bold text-primary">لديك طلب جديد</h6>
+                                            <span class="small text-muted">نص تجريبي كليلي ايس</span>
+                                        </div>
+                                        <span class="small text-muted">
+                                            منذ 5 ساعات
+                                        </span>
+                                    </div>
+                                </a>
+
+                            </div>
                         </li>
+
                     </ul>
                 </div>
             </nav>
@@ -336,28 +365,19 @@
             </div>
         </div>
     </div>
-    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="app-assets/vendors/js/vendors.min.js"></script>
-    <!-- BEGIN Vendor JS-->
-
-    <!-- BEGIN: Page Vendor JS-->
     <script src="app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
     <script src="app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-    <!-- END: Page Vendor JS-->
-
-    <!-- BEGIN: Theme JS-->
     <script src="app-assets/js/scripts/components.js"></script>
-    <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
     <script src="app-assets/js/scripts/ui/data-list-view.js"></script>
-    <!-- END: Page JS-->
     <script src="js/main.js"></script>
+
 
 </body>
 

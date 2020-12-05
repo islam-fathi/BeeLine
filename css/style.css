@@ -14,6 +14,11 @@ input[type=number]::-webkit-inner-spin-button {
     opacity: 1 !important;
 }
 
+.dropdown .dropdown-menu,
+.dropup .dropdown-menu {
+    top: 100% !important;
+}
+
 
 /* our classes */
 
@@ -30,15 +35,34 @@ h5.title-with-border.dark-mode {
     color: #fff !important;
 }
 
-.form-holder.dark-mode label {
+.form-holder.dark-mode label,
+body.dark-mode .form-check-label,
+body.dark-mode .form-group label {
     color: #fff !important;
 }
 
 .form-holder.dark-mode .form-control,
 body.dark-mode .form-control,
 body.dark-mode .input-group-prepend button,
-body.dark-mode .input-group.search-holder {
+body.dark-mode .input-group.search-holder,
+body.dark-mode .dropify-wrapper,
+body.dark-mode .selectpicker,
+body.dark-mode .switches-row {
     background-color: #072e55e3 !important;
+    color: #F9D036 !important;
+}
+
+body.dark-mode .cards-holder {
+    background-color: #012344 !important;
+}
+
+body.dark-mode .cards-holder .card,
+body.dark-mode .orders-container .card {
+    background-color: #072e55e3 !important;
+}
+
+body.dark-mode .cards-holder .card .username,
+body.dark-mode .orders-container .card .username {
     color: #F9D036 !important;
 }
 
@@ -56,7 +80,9 @@ body.dark-mode table.table {
 }
 
 body.dark-mode table.dataTable tbody tr.odd,
-table.dataTable tbody tr.even {
+body.dark-mode table.dataTable tbody tr.even,
+body.dark-mode table.data-list-view.dataTable tbody tr,
+body.dark-mode table.data-thumb-view.dataTable tbody tr {
     background-color: #003a71 !important;
     color: #FFF !important;
 }
@@ -82,6 +108,18 @@ body.dark-mode .form-check {
 body.dark-mode input:checked+.slider {
     border: 2px solid #fff !important;
 }
+
+body.dark-mode .info-card,
+body.dark-mode .data,
+body.dark-mode .progress-row,
+body.dark-mode .progress-row .title,
+body.dark-mode .orders-container {
+    background-color: #012344 !important;
+    color: #F9D036;
+}
+
+
+/* end of dark mode  */
 
 .main-bg {
     background: linear-gradient( #FFFAEC, #FEE085);
