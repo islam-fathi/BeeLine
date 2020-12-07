@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>كشف ايرادات عن فترة</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/datatables.min.css">
     <!-- END: Vendor CSS-->
@@ -19,10 +20,13 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/pages/data-list-view.css">
     <!-- END: Page CSS-->
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
 
     <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <!-- END: Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body class="dashboard-body">
@@ -214,7 +218,7 @@
 
             </div>
         </div>
-        <!-- sidebar-wrapper -->
+        <!-- sidebar-wrapper
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -274,171 +278,65 @@
             <!-- end of navbar  -->
             <div class="container py-4">
                 <div class="add-customer">
-                    <h5 class="title-with-border">
-                        <span><i class="fas fa-plus-circle mx-2 "></i></span>إضافة عميل جديد
+                    <h5 class="title-with-border pb-4">
+                        <span><i class="fas fa-plus-circle invisible"></i></span>كشف إيرادات عن فترة
                     </h5>
-                    <div class="form-holder radius bg-white p-4 my-5">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <label>اسم العميل</label>
-                                        <input type="email" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <label>رقم الجوال</label>
-                                    <div class="row ">
-                                        <div class="col-3 ">
-                                            <div class="form-group">
-                                                <select class="form-control p-0" id="exampleFormControlSelect1">
-                                                <option data-countryCode="DZ" value="213">Algeria (+213)</option>
-                                                <option data-countryCode="AD" value="376">Andorra (+376)</option>
-                                                <option data-countryCode="AO" value="244">Angola (+244)</option>
-                                            </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-9">
-                                            <div class="form-group ">
-                                                <input type="tel" class="form-control mw-100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <label>البريد الالكتروني </label>
-                                    <input type="email" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <label>كلمة المرور</label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <label>تأكيد كلمة المرور</label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4  justify-content-center align-items-center d-flex">
-                                    <div class="row justify-content-between w-100">
-                                        <div class="col-6 d-flex align-items-center justify-content-end flex-row-reverse">
-                                            <label class="light-blue mb-0" for="project_owner">هل انت صاحب مشروع</label>
-                                            <input type="checkbox" class="w-auto mr-1" id="project_owner">
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit " class="btn base-bg text-dark w-100 py-1 d-block m-auto ">إضافة</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                     <div class="customers-table">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h5 class="title-with-border">
-                                    <span><i class="fas fa-users mx-2 "></i></span>العملاء
-                                </h5>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center justify-content-end">
-                                <div class="input-group search-holder mt-3 mt-md-0 w-50 mr-5 border radius bg-white dataTables_filter" id="DataTables_Table_0_filter">
-                                    <div class="input-group-prepend bg-white radius">
-                                        <button type="submit" class="input-group-text bg-white border-0 radius" id="basic-addon1">
-                                            <i class="fas fa-search"></i>
-                                        </button>
+                            <div class="col-md-4 col-lg-4">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-6">
+                                        <div class="form-group m-0">
+                                            <label>تصدير</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>PDF</option>
+                                                <option>Excel</option>
+                                                <option>HTML5</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <input type="text" class="form-control border-0 radius" placeholder="بحث" aria-controls="DataTables_Table_0">
-                                </div>
-                                <div class="form-group m-0 d-flex align-items-center justify-content-between" style="width: 100px;">
-                                    <label for="" class="font-weight-bold d-inline px-2">اظهار</label>
-                                    <input type="number" value="5" class="form-control d-inline">
-                                    </input>
+                                    <div class="col-6 d-flex align-items-center justify-content-between mt-4">
+                                        <button type="submit " class="btn print-btn py-1 radius text-dark px-4">تصدير</button>
+                                        <button type="submit " class="btn text-white reject-btn py-1 px-4 radius">طباعة</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive my-3">
+                    <div class="table-responsive">
                         <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                             <div class="clear"></div>
-                            <table class="table text-center data-list-view bg-white rounded-lg nowrap dataTable no-footer data-list-view display" id="customer-table" role="grid">
+                            <table class="table text-center data-list-view bg-white nowrap rounded-lg dataTable no-footer dt-checkboxes-select" id="DataTables_Table_0" role="grid">
                                 <thead>
                                     <tr role="row" class="base-bg">
-                                        <th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15px;" data-col="0" aria-label=""><input type="checkbox"></th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CATEGORY: activate to sort column ascending">Id</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">اسم العميل</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">رقم الجوال</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="NAME: activate to sort column descending">البريد الالكتروني</th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="POPULARITY: activate to sort column ascending">صاحب مشروع </th>
-                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="PRICE: activate to sort column ascending"></th>
+                                        <th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 35px;" data-col="0" aria-label=""><input type="checkbox"></th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="NAME: activate to sort column descending">رقم الطلب / السند / الفاتورة</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="POPULARITY: activate to sort column ascending">التاريخ</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">المبلغ</th>
+                                        <th class="" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ORDER STATUS: activate to sort column ascending">مصدر الايراد</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr role="row" class="odd">
-                                        <td class="dt-checkboxes-cell"></td>
-                                        <td class="product-category">1234</td>
-                                        <td class="product-category">
-                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
-                                                <img src="images/user.jpg" width="35px" class="profile_pic rounded-circle mx-1" alt="" style="border: 2px solid #FFF;">
-                                                <h6 class="mx-1 mb-0 text-dark">أسامة عسكر</h6>
-                                            </a>
-                                        </td>
-                                        <td class="product-category">
-                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
-                                                <img src="icons/kwait.svg" width="35px" class="profile_pic mx-1" alt="" style="border: 2px solid #FFF;">
-                                                <h6 class="mx-1 mb-0 text-dark">+201234567890</h6>
-                                            </a>
-                                        </td>
-                                        <td class="product-category">osamaaskar100@gmail.com</td>
-                                        <td class="product-category"><i class="fas fa-check text-success mx-1"></i></td>
-                                        <td class="product-action ">
-                                            <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1" style="background-color: #6788FF !important;">
-                                                <i class="fas fa-pen mx-1"></i>تعديل</button>
-                                            <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1 action-delete" style="background-color: #FF9391 !important;">
-                                                    <i class="fas fa-trash mx-1"></i>
-                                                    حذف
-                                                </button>
-                                            <button class="small text-white btn-sm btn-primary border-0 px-1 mb-1 " style="background-color: #FC7438!important">
-                                                    <i class="fas fa-lock mx-1"></i>حظر</button>
-                                        </td>
+                                        <td class="dt-checkboxes-cell"><input type="checkbox" class="dt-checkboxes"></td>
+                                        <td class="product-category">1</td>
+                                        <td class="product-category">8-9-2020</td>
+                                        <td class="product-category">500 دينار</td>
+                                        <td class="product-category">شحنة ساعات</td>
                                     </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="dt-checkboxes-cell"></td>
-                                        <td class="product-category">1234</td>
-                                        <td class="product-category">
-                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
-                                                <img src="images/user.jpg" width="35px" class="profile_pic rounded-circle mx-1" alt="" style="border: 2px solid #FFF;">
-                                                <h6 class="mx-1 mb-0">احمد عسكر</h6>
-                                            </a>
-                                        </td>
-                                        <td class="product-category">
-                                            <a class="sidebar-heading d-flex align-items-center justify-content-center">
-                                                <img src="icons/kwait.svg" width="35px" class="profile_pic mx-1" alt="" style="border: 2px solid #FFF;">
-                                                <h6 class="mx-1 mb-0">+201234567890</h6>
-                                            </a>
-                                        </td>
-                                        <td class="product-category">osamaaskar100@gmail.com</td>
-                                        <td class="product-category"><i class="fas fa-check text-success mx-1"></i></td>
-                                        <td class="product-action ">
-                                            <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1" style="background-color: #6788FF !important;">
-                                                <i class="fas fa-pen mx-1"></i>تعديل</button>
-                                            <button class="small text-white btn-sm btn-primary border-0 mb-1 px-1 action-delete" style="background-color: #FF9391 !important;">
-                                                    <i class="fas fa-trash mx-1"></i>
-                                                    حذف
-                                                </button>
-                                            <button class="small text-white btn-sm btn-primary border-0 px-1 mb-1 " style="background-color: #FC7438!important">
-                                                    <i class="fas fa-lock mx-1"></i>حظر</button>
-                                        </td>
-                                    </tr>
-
                                 </tbody>
                             </table>
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-md-2">
+                                    <div class="form-group m-0 d-flex align-items-center justify-content-between">
+                                        <label for="" class="font-weight-bold d-inline px-2 mb-0">اظهار</label>
+                                        <input type="number" value="5" class="form-control d-inline">
+                                        </input>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -455,7 +353,6 @@
     <script src="app-assets/js/scripts/components.js"></script>
     <script src="app-assets/js/scripts/ui/data-list-view.js"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 
