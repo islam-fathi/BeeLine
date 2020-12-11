@@ -118,6 +118,16 @@ body.dark-mode .orders-container {
     color: #F9D036;
 }
 
+body.dark-mode #print-app {
+    background-color: #012344!important;
+    color: #F9D036 !important;
+}
+
+body.dark-mode #print-app input {
+    background-color: #072e55e3 !important;
+    color: #F9D036 !important;
+}
+
 
 /* end of dark mode  */
 
@@ -1006,4 +1016,26 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media (max-width:767px) {
+    .job-app-body h2 {
+        font-size: 1rem !important;
+    }
+    .job-app-body h4 {
+        font-size: .9rem !important;
+    }
+    .job-app-body h5 {
+        font-size: .8rem !important;
+    }
+    .job-app-body h6 {
+        font-size: .7rem !important;
+    }
+    .job-app-body label {
+        font-size: .5rem !important;
+    }
+}
+
+ol li {
+    margin-bottom: 1rem;
 }
