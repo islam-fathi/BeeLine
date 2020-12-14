@@ -118,7 +118,7 @@ body.dark-mode .orders-container {
     color: #F9D036;
 }
 
-body.dark-mode #print-app {
+body.dark-mode #print-app .job-application {
     background-color: #012344!important;
     color: #F9D036 !important;
 }
