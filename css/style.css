@@ -26,6 +26,10 @@ body.dark-mode {
     background-color: #012344e3 !important;
 }
 
+body.dark-mode .reborts-bg {
+    background-color: #012344 !important;
+}
+
 h5.title-with-border.dark-mode {
     color: #F9D036 !important;
 }
@@ -371,6 +375,10 @@ body.splash {
 #sidebar-wrapper .list-group .list-group-item:hover {
     background-color: #012344;
     color: #F9D036;
+}
+
+#sidebar-wrapper .accordion {
+    width: 15rem;
 }
 
 @media (min-width: 768px) {
